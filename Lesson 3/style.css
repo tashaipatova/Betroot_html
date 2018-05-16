@@ -1,0 +1,40 @@
+body {
+    background-color: lavender;
+}
+
+h1 {
+    color: darkblue;
+    font-family: "Lucida Calligraphy", Arial;
+}
+
+h3{
+    color: blueviolet;
+}
+
+p {
+    color: darkcyan;
+}
+
+p b{
+    color: darkblue;
+}
+
+.the_end{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+}
+
+img {
+    border-radius: 20px;
+}
+
+img +p{
+    font-size: 14px;
+    font-style: italic;
+}
+
+li {
+    font-style: italic;
+}
