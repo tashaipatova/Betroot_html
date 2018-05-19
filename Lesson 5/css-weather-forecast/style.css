@@ -2,110 +2,131 @@ body {
     background-color: #3399CC;
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
     color: #FFFFFF;
-    border: 10px solid #2B81AC;
+    border: 15px solid #2B81AC;
     margin: 0px;
     padding: 0px;
+    height:100%
 }
 
-html, body{height:100%;}
+html {height:100%;}
 
-li{
-    display: inline-block;
-    border-collapse: collapse;
-    border: 2px solid #FFFFFF;
-
+/*Texts in header and footer*/
+header p{
+    margin-left: 20%;
+    font-size: 24px;
 }
+
+footer p{
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
 
 /*adding degree sign after texts*/
-li:after{
+li span:after{
     content:"°C";
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+/*Hove effects*/
+.city_list:hover{
+
+}
+
+li:hover {
     opacity: 0.5;
 }
 
-
-/*
-Города это список
-НЕ ИСПОЛЬЗОВАТЬ FLOAT!
-Для размещения в “сетку” городов используем display: inline-block;
-Ширину каждого пункта делать в процентах (например: width: 50%)
-Для эффекта смены прозрачности используем :hover и opacity
-*/
-
-/*Changing background color and adding top & bottom borders to the element while hovering*/
-li:hover{
-    background-color: #FFFFFF;
-    opacity: 0.5;
-}
-
-
+/* ul */
 .city_list{
-    box-sizing: border-box;
     font-size: 0px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0px;
+    border: 1px solid #FFFFFF;
 }
 
+/*styles for li with city names*/
 .city_list li{
     font-size: 20px;
+    text-align: center;
+    /*width: 25%;*/
+    padding-top: 10px;
+    white-space: pre-line;
+
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
+/*styles for degree numbers*/
 .city_list li span{
+    padding: 0 .5em;
     opacity: 0.5;
 }
 
-#lisbon{
+/*styles for weather icons*/
+.city_list li [class*="wi-"]{
+    opacity: 0.6;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+/*styles for each of .city_list li elements*/
+.city_list li:first-child{
     background-color: #3399CC;
     width: 50%;
 }
 
-#paris{
+.city_list li:nth-child(2){
     background-color: #33CCCC;
     width: 25%;
 }
 
-#belgrade{
+.city_list li:nth-child(3){
     background-color: #996699;
     width: 25%;
 }
 
-#moscow{
+.city_list li:nth-child(4){
     background-color: #C24747;
     width: 25%;
 }
 
-#tel_aviv{
+.city_list li:nth-child(5){
     background-color: #E2674A;
     width: 25%;
 }
 
-#cair{
+.city_list li:nth-child(6){
     background-color: #FFCC66;
     width: 25%;
 }
 
-#new_york{
+.city_list li:nth-child(7){
     background-color: #99CC99;
     width: 25%;
 }
 
-#new_delhi{
+.city_list li:nth-child(8){
     background-color: #669999;
     width: 25%;
 }
 
-#san_francisco{
+.city_list li:nth-child(9){
     background-color: #CC6699;
     width: 50%;
 }
 
-#tokyo{
+.city_list li:nth-child(10){
     background-color: #339966;
     width: 25%;
 }
 
-#sydney{
+.city_list li:last-child{
     background-color: #666699;
     width: 100%;
 }
