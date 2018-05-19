@@ -1,0 +1,115 @@
+body {
+    background-color: #3399CC;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    color: #FFFFFF;
+    border: 10px solid #2B81AC;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{height:100%;}
+
+li{
+    display: inline-block;
+    border-collapse: collapse;
+    border: 2px solid #FFFFFF;
+
+}
+
+/*adding degree sign after texts*/
+li:after{
+    content:"°C";
+    opacity: 0.5;
+}
+
+
+/*
+Города это список
+НЕ ИСПОЛЬЗОВАТЬ FLOAT!
+Для размещения в “сетку” городов используем display: inline-block;
+Ширину каждого пункта делать в процентах (например: width: 50%)
+Для эффекта смены прозрачности используем :hover и opacity
+*/
+
+/*Changing background color and adding top & bottom borders to the element while hovering*/
+li:hover{
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+
+
+.city_list{
+    box-sizing: border-box;
+    font-size: 0px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+}
+
+.city_list li{
+    font-size: 20px;
+}
+
+.city_list li span{
+    opacity: 0.5;
+}
+
+#lisbon{
+    background-color: #3399CC;
+    width: 50%;
+}
+
+#paris{
+    background-color: #33CCCC;
+    width: 25%;
+}
+
+#belgrade{
+    background-color: #996699;
+    width: 25%;
+}
+
+#moscow{
+    background-color: #C24747;
+    width: 25%;
+}
+
+#tel_aviv{
+    background-color: #E2674A;
+    width: 25%;
+}
+
+#cair{
+    background-color: #FFCC66;
+    width: 25%;
+}
+
+#new_york{
+    background-color: #99CC99;
+    width: 25%;
+}
+
+#new_delhi{
+    background-color: #669999;
+    width: 25%;
+}
+
+#san_francisco{
+    background-color: #CC6699;
+    width: 50%;
+}
+
+#tokyo{
+    background-color: #339966;
+    width: 25%;
+}
+
+#sydney{
+    background-color: #666699;
+    width: 100%;
+}
+
+
+/*Smooth animation*/
+*{transition: all .1s ease-in;}
