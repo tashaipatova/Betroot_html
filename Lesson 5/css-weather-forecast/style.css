@@ -23,20 +23,14 @@ footer p{
 }
 
 
-/*adding degree sign after texts*/
-li span:after{
-    content:"°C";
-    color: #FFFFFF;
-    opacity: 0.6;
+
+/*hover effects*/
+.city_list:hover li {
+    opacity: 0.7;
 }
 
-/*Hove effects*/
-.city_list:hover{
-
-}
-
-li:hover {
-    opacity: 0.5;
+.city_list li:hover {
+    opacity: 1;
 }
 
 /* ul */
@@ -47,16 +41,17 @@ li:hover {
     margin-right: auto;
     padding-left: 0px;
     border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /*styles for li with city names*/
 .city_list li{
     font-size: 20px;
     text-align: center;
-    /*width: 25%;*/
+    vertical-align: center;
     padding-top: 10px;
     white-space: pre-line;
-
+    line-height: 45px;      /*I guess it'd be better to convert this into percents*/
     display: inline-block;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
@@ -68,10 +63,14 @@ li:hover {
     opacity: 0.5;
 }
 
+/*adding degree sign after numbers*/
+li span:after{
+    content:"°C";
+}
+
 /*styles for weather icons*/
 .city_list li [class*="wi-"]{
     opacity: 0.6;
-    line-height: 50px;
     font-size: 24px;
 }
 
