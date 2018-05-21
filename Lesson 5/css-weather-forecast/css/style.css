@@ -1,0 +1,134 @@
+body {
+    background-color: #3399CC;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    color: #FFFFFF;
+    border: 15px solid #2B81AC;
+    margin: 0px;
+    padding: 0px;
+    height:100%
+}
+
+html {height:100%;}
+
+/*Texts in header and footer*/
+header p{
+    margin-left: 20%;
+    font-size: 24px;
+}
+
+footer p{
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+/*hover effects*/
+.city_list:hover li {
+    opacity: 0.7;
+}
+
+.city_list li:hover {
+    opacity: 1;
+}
+
+/* ul */
+.city_list{
+    font-size: 0px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+/*styles for li with city names*/
+.city_list li{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    white-space: pre-line;
+    line-height: 45px;      /*should be converted into percents*/
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+/*styles for degree numbers*/
+.city_list li span{
+    padding: 0.5em;
+    opacity: 0.5;
+}
+
+/*adding degree sign after numbers*/
+li span:after{
+    content:"°C";
+}
+
+/*styles for weather icons*/
+.city_list li [class*="wi-"]{
+    opacity: 0.6;
+    font-size: 24px;
+}
+
+.width_100{
+    width: 100%;
+}
+.width_50{
+    width: 50%;
+}
+.width_25{
+    width: 25%;
+}
+
+/*styles for each of .city_list li elements*/
+.city_list li:first-child{
+    background-color: #3399CC;
+}
+
+.city_list li:nth-child(2){
+    background-color: #33CCCC;
+}
+
+.city_list li:nth-child(3){
+    background-color: #996699;
+}
+
+.city_list li:nth-child(4){
+    background-color: #C24747;
+}
+
+.city_list li:nth-child(5){
+    background-color: #E2674A;
+}
+
+.city_list li:nth-child(6){
+    background-color: #FFCC66;
+}
+
+.city_list li:nth-child(7){
+    background-color: #99CC99;
+}
+
+.city_list li:nth-child(8){
+    background-color: #669999;
+}
+
+.city_list li:nth-child(9){
+    background-color: #CC6699;
+}
+
+.city_list li:nth-child(10){
+    background-color: #339966;
+}
+
+.city_list li:last-child{
+    background-color: #666699;
+}
+
+
+/*Smooth animation*/
+*{transition: all .1s ease-in;}
