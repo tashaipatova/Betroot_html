@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <!--<link rel="stylesheet" href="css/normalize.css"/> -->
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Diner Shopping List</title>
 </head>
 <body>
@@ -17,6 +18,23 @@
                 <td>
                     <input type="checkbox" id="v1">
                     <label for="v1" class="check_label">A lot of pickles <span>for the next lessons about CSS</span></label>
+                    <!--теоритически можно завернуть инпут в лейбл и тогда текст
+                    будет зачеркиваться при клике на любом месте строки, а не только по тексту. В таком случае лейблу
+                    можно не указывать for, а инпуту id. Это работает только с чекбоксами и радио-баттон
+                    Инпут тогда должен быть по размеру такой же, как div, в который он завернут - label {display:block;}
+
+                    чекбоксу не надо добавлять марджин. Если надо растолкать ширину- использовать line-height, font-size
+
+                    чтобб контент не залипал по краям - добавлять в div padding
+                    -->
+                    <!--
+                    <form>
+                        <label class="check_label">
+                            <input type="checkbox">
+                            A lot of pickles <span>for the next lessons about CSS</span>
+                        </label>
+                    </form>
+                    -->
                 </td>
             </tr>
             <tr class="test_row">

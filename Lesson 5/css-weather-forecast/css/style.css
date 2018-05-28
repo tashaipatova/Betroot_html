@@ -3,21 +3,26 @@ body {
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
     color: #FFFFFF;
     border: 15px solid #2B81AC;
-    margin: 0px;
-    padding: 0px;
-    height:100%
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 html {height:100%;}
 
 /*Texts in header and footer*/
+/*Лучше задавать padding родительскому элементу, чем margin самому элементу.
+Потому что марджин может схлопнуться: если два эл-та, назодящиеся друг под другом, имеют марджин-топ и боттом,
+то между ними будет не двойной пробел, а расстояние с размером большего из указанных марджинов*/
 header p{
     margin-left: 20%;
+    margin-right: 20%;
     font-size: 24px;
 }
 
 footer p{
     margin-left: 20%;
+    margin-right: 20%;
     margin-top: 20px;
     font-size: 14px;
 }
@@ -35,11 +40,11 @@ footer p{
 
 /* ul */
 .city_list{
-    font-size: 0px;
+    font-size: 0;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0px;
+    padding-left: 0;
     border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
 }
@@ -49,7 +54,6 @@ footer p{
     font-size: 20px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 10px;
     white-space: pre-line;
     line-height: 45px;      /*should be converted into percents*/
     display: inline-block;
