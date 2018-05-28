@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+}
+
+.top_screen{
+    background-color: #23232e;
+    color: white;
+    text-align: center;
+}
+
+.top_screen h1{
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.arrow_down {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+}
+
+
+.bottom_screen {
+    background-image: url("../img/bottom_lines.png");
+    text-align: center;
+}
+
+.bottom_screen h3{
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+.bottom_screen h4{
+    text-transform: uppercase;
+}
+
+.bottom_screen p{
+    font-size: 30px;
+}
+
+.column {
+    display: inline-block;
+    width: 30%;
+}
