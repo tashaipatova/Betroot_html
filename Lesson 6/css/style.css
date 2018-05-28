@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px 0;
+    background-color: #F1F1F1;
+    color: #c2c2c2;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+/*side paddings*/
+.side-padding {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*search line*/
+.search-field{
+    box-shadow: none;
+    width: 90%;
+    border: 0;
+    background-color: #F1F1F1;
+    color: #c2c2c2;
+    font-weight: bold;
+    line-height: 100px;
+    font-size: 80px;
+}
+
+/*hover effect for search line*/
+.search-field:hover{
+    color: #ec5a62;
+}
+
+/*search button*/
+.search-button {
+    width: 100px;
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/*general style for column*/
+.column {
+    display: inline-block;
+    width: 30%;
+}
+
+/*styles for central column*/
+.column.center{
+    margin: 0 40px;
+}
+
+/*header in each column*/
+.column h3{
+    text-transform: uppercase;
+}
+
+/*styles of link with photo and name or description*/
+.item a{
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;         /*making edges rounder*/
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(118,117,128,0.05);
+    color: #c2c2c2;
+}
+
+/*hover effect for the link with photo and description*/
+.item a:hover{
+    background-color: rgba(118,117,128,0.1);
+    color: #ec5a62;
+}
+
+/*text used in names or descriptions near photos*/
+.item a span{
+    line-height: 50px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+/*ordinary square photos*/
+.item img {
+    display: inline-block;
+    margin: 0 0 -5px 0;
+    height: 50px; /*if the size of the pic differs*/
+}
+
+/*making photos round*/
+.item .photo-round {
+    border-radius: 50%;
+}
