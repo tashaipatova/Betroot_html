@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+/*фон. по бокам по 100px, сверху/снизу по 130*/
+
+html, body{
+    height: 100%;
+}
+
+
+/*блок, отбрасывающий тень*/
+div {
+    box-shadow: 0 4px 68px rgba(0,0,0,0.1);
+    margin: 130px 100px;
+    padding: 120px 120px;
+    background-color: #ffffff;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+
+/*header style*/
+div h1 {
+    font-family: 'Playfair Display', "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 42px;
+}
+
+/*style of the main text*/
+.main_text {
+    font-size: 19px;
+    opacity: 0.7;
+    line-height: 1.8;
+}
+
+/*first letter of the chapter*/
+.chapter_start:first-letter{
+    font-family: 'Playfair Display', "Times New Roman", serif;
+    opacity: 1;
+    font-size: 110px;
+    float: left;
+    margin: -55px 5px -50px -5px;
+}
+.quote{
+    clear: left;
+    opacity: 0.7;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.quote:before{
+    content: '“';
+    padding-right: 25px;
+    font-size: 63px;
+    font-style: italic;
+}
+
+/*view of the button*/
+button{
+    width: 264px;
+    height: 68px;
+    background-color: transparent;
+    border: 2px solid #e9a157;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-align: center;
+
+    text-transform: uppercase;
+    color: #e9a157;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/*properties of text in button*/
+button span{
+/*    width: 252px;
+    height: 36px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 34px;
+    color: rgb(234,162,88);
+    font-family: "Lato";
+    font-weight: bold;
+    text-align: center;*/
+}
