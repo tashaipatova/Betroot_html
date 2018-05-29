@@ -57,13 +57,17 @@ body {
     text-transform: uppercase;
 }
 
+/*space between elements*/
+.item {
+    margin: 5px 0;
+}
+
 /*styles of link with photo and name or description*/
 .item a{
     display: block;
     text-decoration: none;
     border-radius: 5px;         /*making edges rounder*/
     padding: 10px;
-    margin: 5px 0;
     background-color: rgba(118,117,128,0.05);
     color: #c2c2c2;
 }
