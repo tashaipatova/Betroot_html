@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI.ttf") format('ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,24 +14,31 @@ html, body{
 body{
     background-color: white;
     font-size: 18px;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .top_screen{
     background-color: #23232e;
     color: white;
     text-align: center;
+    /*width: 100vw;
+    height: 100vh;*/
+    padding-bottom: 50px;
 }
 
 .top_screen h1{
     text-transform: uppercase;
     font-size: 80px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .circle {
+    display: inline-block;
     width: 50px;
     height: 50px;
     background: transparent;
-    border-radius: 50px;
+    border-radius: 50%;
     border: 2px solid white;
 }
 
@@ -38,26 +50,44 @@ body{
     transform: rotate(45deg);
 }
 
-
 .bottom_screen {
     background-image: url("../img/bottom_lines.png");
     text-align: center;
+    color: rgb(70,75,79);
+    padding: 100px 100px;
+}
+
+.about_me{
+    display: inline-block;
+    width: 70%;
 }
 
 .bottom_screen h3{
     text-transform: uppercase;
     font-size: 80px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .bottom_screen h4{
     text-transform: uppercase;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .bottom_screen p{
     font-size: 30px;
 }
 
+.bottom_screen .description{
+    font-size: 18px;
+
+    color: rgb(136,138,139);
+}
+
 .column {
     display: inline-block;
-    width: 30%;
+    width: 25%;
+    line-height: 1.5;
+    text-align: left;
 }
