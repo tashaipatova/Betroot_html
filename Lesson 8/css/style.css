@@ -81,13 +81,22 @@ body{
 
 .bottom_screen .description{
     font-size: 18px;
-
     color: rgb(136,138,139);
 }
 
-.column {
+.what_i_do {
     display: inline-block;
-    width: 25%;
+    width: 85%;
+}
+
+.column {
+    width: 31%;
     line-height: 1.5;
     text-align: left;
+}
+
+.what_i_do_details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
