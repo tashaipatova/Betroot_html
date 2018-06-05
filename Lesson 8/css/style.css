@@ -17,15 +17,17 @@ body{
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/*style for 1st screen (dark navy)*/
 .top_screen{
     background-color: #23232e;
     color: white;
     text-align: center;
     /*width: 100vw;
     height: 100vh;*/
-    padding-bottom: 50px;
+    padding: 100px 100px;
 }
 
+/*style for slogan on the 1st screen*/
 .top_screen h1{
     text-transform: uppercase;
     font-size: 80px;
@@ -33,6 +35,14 @@ body{
     font-weight: bold;
 }
 
+/*style for text under slogan*/
+.top_screen p{
+    padding: 40px 0;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/*style for button*/
 .circle {
     display: inline-block;
     width: 50px;
@@ -41,8 +51,9 @@ body{
     border-radius: 50%;
     border: 2px solid white;
 }
-
+/*button*/
 .arrow_down {
+    margin-top: 10px;
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -50,6 +61,7 @@ body{
     transform: rotate(45deg);
 }
 
+/*general style for 2nd screen*/
 .bottom_screen {
     background-image: url("../img/bottom_lines.png");
     text-align: center;
@@ -57,46 +69,50 @@ body{
     padding: 100px 100px;
 }
 
+/*style for texts in "About me" section*/
 .about_me{
     display: inline-block;
     width: 70%;
+    font-size: 30px;
 }
 
-.bottom_screen h3{
+/*style for "What I do" section - general*/
+.what_i_do {
+    display: inline-block;
+    width: 85%;
+}
+
+/*style for main "What I do" text*/
+.what_i_do h3{
     text-transform: uppercase;
     font-size: 80px;
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: bold;
 }
 
-.bottom_screen h4{
-    text-transform: uppercase;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: bold;
+/*section with 3 columns for "What I do"*/
+.what_i_do_details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.bottom_screen p{
-    font-size: 30px;
-}
-
-.bottom_screen .description{
-    font-size: 18px;
-    color: rgb(136,138,139);
-}
-
-.what_i_do {
-    display: inline-block;
-    width: 85%;
-}
-
-.column {
+/*columns in "What I do" section*/
+.what_i_do .column {
     width: 31%;
     line-height: 1.5;
     text-align: left;
 }
 
-.what_i_do_details{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+/*style for titles in columns in "What I do" section*/
+.what_i_do h4{
+    text-transform: uppercase;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: bold;
+}
+
+/*description in each column in "What I do" section*/
+.what_i_do p{
+    font-size: 18px;
+    color: rgb(136,138,139);
 }
