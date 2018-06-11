@@ -26,7 +26,12 @@ body {
     height: 80px;
 }
 
-.desk_cells li:nth-child(2n){
+/*.desk_cells li:nth-child(2n){
+    background-color: #525178;
+}*/
+
+/*background for dark cells on the board*/
+.desk_cells .bg_dark{
     background-color: #525178;
 }
 
