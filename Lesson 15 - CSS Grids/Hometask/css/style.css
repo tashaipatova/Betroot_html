@@ -41,7 +41,7 @@ section.akad_top{
     min-height:100vh;
     padding-top:50px;
     padding-bottom:110px;
-    background: #b0b0b0 url('../img/bg.png') no-repeat center;
+    background: #b0b0b0 url('../img/bg.jpg') no-repeat center;
     filter: grayscale(100%);
     /*opacity: 0.5;*/
     background-size:cover;
