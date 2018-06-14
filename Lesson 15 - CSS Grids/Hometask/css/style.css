@@ -70,7 +70,6 @@ section.akad_top img{
 h1, h2, h3, h4, h5, h6{
     margin:0;
     padding:0;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -81,16 +80,37 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container p{
-    color: #4d5152;
-    padding: 20px 10px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
+    color: #60606e;
+    /*padding: 20px 10px;*/
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main{
+    text-align: center;
 }
 
 
+.newsletter{
+    background-color: #7beec7;
+    color:#fff;
+    padding: 50px 0;
+}
 
+.newsletter_form{
+    padding: 20px 25px 25px 25px;
+    background-color: #fff;
+    color: #60606e;
+}
 
+.newsletter_form button{
+    text-transform: uppercase;
+}
+
+.newsletter h3{
+
+}
 
 
 /*стили для сеток*/
