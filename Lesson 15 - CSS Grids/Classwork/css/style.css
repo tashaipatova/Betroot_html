@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -12,7 +17,7 @@ img {
 
 .main-container {
     width: 80%;
-    margin: 35px auto;
+    margin: 0 auto;
 }
 
 .main-container p{
