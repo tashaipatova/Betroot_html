@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Payment Form</title>
+</head>
+<body>
+
+<!-- ================ Payment form ============ -->
+    <form>
+        <div class="heading">
+            Harold Finch<!--font-size: 14px; color: #6e7f7b; font-weight: 700;-->
+            your total <!--text-transform:uppercase; font-size: 10px; letter-spacing: 1px; color: #a6a28d; -->
+            $88 <!--font-size: 36px; color: #61726e;-->
+        </div>
+
+        <fieldset>
+            <label for="cc_num">
+                Credit card number <!--font-size: 13px; color: #9eabad; - по умолчанию-->
+                <input type="text" placeholder="Credit card" id="cc_num" pattern="[0-9]{16}" required>
+                <!--font-size: 13px; color: #727f82; -->
+            </label>
+
+            <label for="exp_month">
+                Expiration date <!--font-size: 13px; color: #9eabad;  - по умолчанию-->
+                <input type="month" placeholder="Month" id="exp_month"> <!--font-size: 13px; color: #727f82; -->
+                <input type="number" placeholder="Year" min="2018" id="exp_year">
+            </label>
+
+            <label for="cvv_code">
+                CVV <!--font-size: 13px; color: #9eabad;  - по умолчанию-->
+                <input type="password" max="3" id="cvv_code" pattern="[0-9]{3,4}" required>
+                <span>3 or 4 digits - <a href="#">view example</a></span> <!--font-size: 12px; color: #9eabad;-->
+            </label>
+        </fieldset>
+        <button type="submit">Pay</button>
+        <a href="#">Cancel order</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/*@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI.ttf") format('ttf');
+}*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+form{
+    margin: 0 auto;
+    width: 35%;
+    background-color: #f5f5f5;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 400;
+    color: #9eabad;
+    font-size: 13px;
+}
+
+form, input{
+    display: block;
+}
+
+input {
+    color: #727f82;
+}
+
+fieldset{
+    border: 0;
+}
+
+button{
+    display: block;
+    background-color: #26b167;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a{
+    color: #9eabad;
+}
+
+/*когда поле не фокусе*/
+/*border: 1px solid #b4c1c4;*/
+
+/*когда поле в фокусе*/
+/*border: 1px solid #7eccdf;*/
+
+.heading{
+    background-color: #efe5aa;
+}
+
+#exp_month, #exp_year, #cvv_code{
+    display: inline-block;
+}

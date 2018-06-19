@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>Daily Form</title>
+</head>
+<body>
+    <div class="payment_page">
+        <div class="heading">
+                <h1>Create your free account</h1>
+                <p>Come and join our cool and amazing community, fill in your details
+                to get started. Already have an account?
+                <a href="#">Log in.</a>
+                </p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="First name" id="first_name" pattern="[a-zA-Z].{1,}" required>
+            <input type="text" placeholder="Last name" id="last_name" pattern="[a-zA-Z].{1,}" required>
+            <input type="email" placeholder="Email address" id="user_mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            <input type="password" placeholder="Password" min="6" id="user_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+            <button type="submit">Sign up for free</button>
+        </form>
+
+        <div class="agreement">
+            <p>By clicking on “Sign up for free”, you agree to the <a href="#">Terms of Service</a> and the
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
