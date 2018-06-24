@@ -1,0 +1,372 @@
+@font-face {
+    font-family: "Aleo";
+    src: url("../fonts/Aleo-Regular.otf") format('otf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    /*min-height: 100%;*/
+    height: 100%;
+    background-color: #fff;
+}
+
+body{
+    /*margin: 15px;*/
+    color: #fff;
+}
+
+/*changing default styles for links*/
+a{
+    text-decoration:none;
+    color: #fff;
+}
+button{
+    text-decoration: none;
+    border: none;
+    width: 225px;
+    height: 60px;
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-family: "Aleo", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+
+    /*background gradient for buttons*/
+    background: #496bfe; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #496bfe 0%, #496bfe 40%, #5474fd 40%, #5474fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #496bfe 0%,#496bfe 40%,#5474fd 40%,#5474fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #496bfe 0%,#496bfe 40%,#5474fd 40%,#5474fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+h3{
+    font-family: "Aleo", Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+.content{
+    width: 90%;
+    max-width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+/*================= Start page =======================*/
+
+.start_page{
+    height: 100vh;
+    min-height: 800px;
+    background-image: url("../img/bg_start.jpg");
+    text-align: center;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.main{
+    height: 90%;
+    padding-top: 15%;
+}
+
+.start_page h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    /*font-size: 48px;*/
+}
+
+.start_page h3{
+    text-transform: capitalize;
+    font-weight: 300;
+    /*font-size: 22px;*/
+}
+
+.start_page .search_bar{
+    width: 646px;
+    height: 60px;
+    margin: 30px auto;
+    border: 2px solid #fff;
+    font-size: 0;
+}
+.start_page .search_bar input{
+    display: inline-block;
+    vertical-align: top;
+    width:80%;
+    border: none;
+    text-transform: capitalize;
+    line-height: 56px;
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+ }
+
+.start_page .search_bar button{
+    margin: 0;
+    display: inline-block;
+    width:20%;
+    max-width:146px;
+    font-size: 14px;
+    background: #5474fd;
+    height: 56px;
+
+}
+
+    /*scroll button*/
+.arrow_down {
+    margin-top: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+}
+
+/*================= Menu below the Start page =======================*/
+.bottom_menu{
+    height: 80px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-family: "Aleo", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #5474fd;
+    color: #fff;
+    line-height: 80px;
+}
+.bottom_menu .logo{
+    display:inline-block;
+    float: left;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.bottom_menu ul{
+    float:right;
+}
+
+.bottom_menu ul li{
+    display:inline-block;
+    margin-right:35px;
+}
+
+.bottom_menu ul li:last-child{
+    margin-right:0
+}
+
+/*================= Why choose us =======================*/
+.why_choose_us{
+    height: 100vh;
+    min-height: 680px;
+    background: url("../img/bg_why_choose_us.jpg") no-repeat;
+    color: #fff;
+}
+
+.why_choose{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.why_choose h2{
+    font-family: "Aleo", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.why_choose p{
+    color: #e8e8e8;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.why_choose_img{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.why_choose_img img{
+/*    max-width: 350px;
+    max-height: 220px;*/
+}
+
+/*================= How it works =======================*/
+.how_it_works{
+    height: 50vh;
+    min-height: 340px;
+    padding-top: 10%;
+    background-color: #333333;
+    text-transform: capitalize;
+    /*text-align: center;*/
+}
+
+.how_it_works .icon{
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    margin: 0 auto;
+    background-color: #333333;
+}
+
+
+.align_center{
+    display: inline-block;
+    text-align: center;
+}
+
+
+/*================= Example 1 =======================*/
+.example1{
+    min-height: 700px;
+    height: 100vh;
+    background: url("../img/bg_example1.jpg") no-repeat;
+    /*text-align: center;*/
+}
+
+.place_description{
+    padding: 30px;
+    margin-top: 20%;
+    margin-bottom: 100px;
+    width: 50%; /*(540x370)*/
+    /*max-width: 370px;*/
+    background-color:rgba(35,35,35,0.9);
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+.place_description .country{
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #e8e8e8;
+}
+
+.place_description .place{
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.place_description .description{
+    padding: 15px 0;
+    font-size: 16px;
+    color: #e8e8e8;
+}
+
+    /*================= Example 2 =======================*/
+.example2{
+    min-height: 700px;
+    height: 100vh;
+    background: url("../img/bg_example2.jpg") no-repeat;
+    /*text-align: center;*/
+}
+
+/*================= Testimonials =======================*/
+.testimonials{
+    height: 100vh;
+    min-height: 730px;
+    background: url("../img/bg_testimonials.jpg") no-repeat;
+    /*text-align: center;*/
+}
+
+/*================= Footer =======================*/
+
+footer{
+    height: 50vh;
+    min-height: 270px;
+    background-color: #232323;
+    text-align: center;
+}
+
+footer .logo{
+    padding-top: 10%;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer p{
+    text-transform: capitalize;
+    line-height: 32px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.social_icons a{
+    margin-bottom: 50px;
+    line-height: 48px;
+    color: #e8e8e8;
+    font-size: 16px;
+}
+
+footer a:hover{
+    color: #5474fd;
+}
+
+
+/*============================================================*/
+/*grids*/
+.grid_container {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.grid_row > [class*="grid_cell-"]{
+    float: left;
+    padding-left: 20px;
+}
+
+.grid_container .grid_row {
+    margin-left:-10px;
+    margin-right:-10px;
+}
+
+.grid_container .grid_row + .grid_row{
+    margin-top:20px;
+}
+
+.grid_container .grid_row > [class*="grid_cell-"]{
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/*clearfix fot .grid_row*/
+.grid_row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class*="grid_cell-"]{width: 100%;}
+
+.grid_cell-1-2{width: 50%;}
+
+.grid_cell-1-4{width: 25%;}
+
+.grid_cell-3-4{width: 75%;}
+
+.grid_cell-1-3{width: 33.33333%;}
+
+.grid_cell-2-3{width: 66.66666%;}
