@@ -74,7 +74,6 @@ button{
 }
 
 .start_page .logo{
-    font-family: "Josefin Sans", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 48px;
     font-weight: 700;
@@ -82,7 +81,6 @@ button{
 }
 
 .start_page .slogan{
-    font-family: "Josefin Sans", Arial, sans-serif;
     text-transform: capitalize;
     font-weight: 300;
     font-size: 22px;
@@ -122,7 +120,7 @@ button{
     background: #5474fd;
 }
 
-    /*style for section with scroll button and text*/
+/*style for section with scroll button and text*/
 .scroll{
     text-transform: capitalize;
     padding: 70px;
@@ -319,10 +317,10 @@ button{
 
 .testimonials h3{
     padding-bottom: 100px;
+    font-family: Aleo, sans-serif;
     text-transform: capitalize;
     text-align: center;
     font-size: 36px;
-    font-family: Aleo, sans-serif;
     font-weight: 300;
 }
 
