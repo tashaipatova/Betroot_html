@@ -2,40 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<link rel="icon" type="image/png" href="img/favicon.png">-->
-    <title>Exam</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <title>Travel More</title>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css"
-          integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css"
-          integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <!--================= Start page =======================-->
+    <!-- ================= Start page ======================= -->
     <section class="start_page">
-        <div class="content main">
-            <h1>Bhromaon</h1>
-            <h3>Safe travel anywhere</h3>
-            <form class="search_bar">
+        <div class="content">
+            <div class="logo_text">
+                <h1 class="logo">Bhromaon</h1>
+                <h3 class="slogan">Safe travel anywhere</h3>
+            </div>
+            <form class="search_form">
                 <input type="text" placeholder="Search Your Travel Destination">
                 <button type="submit">Search
-                    <img src="img/button_search.svg" alt="search">
+                    <img src="img/button_search.png" alt="search">
                 </button>
             </form>
-
-            <p>Scroll down</p>
-                <a class="scroll" href="#why_choose_us">
-                <i class="arrow_down"></i>
-            </a>
+            <div class="scroll">
+                <p>Scroll down</p>
+                 <a href="#why-choose-us">
+                    <i class="arrow_down"></i>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!--================= Menu below the Start page =======================-->
+    <!-- ================= Menu below the Start page ======================= -->
     <section class="bottom_menu">
-        <div class="content">
-        <nav class="clearfix">
+        <nav class="content">
             <h3 class="logo">Bhromaon</h3>
             <ul>
                 <li><a href="#">Who we are</a></li>
@@ -44,56 +43,66 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
-        </div>
+        <div class="clearfix"></div>
     </section>
-    <!--================= Why choose us =======================-->
-    <section id="why_choose_us" class="why_choose_us">
+    <!-- ================= Why choose us ======================= -->
+    <section id="why-choose-us" class="why_choose_us">
         <div class="grid_container content">
             <div class="grid_row">
                 <div class="grid_cell-1-2">
-                    <div class="why_choose">
+                    <div class="why_choose_us_text">
                         <h2>Why Choose Us</h2>
                         <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure
                             of the moment, so blinded by desire, that they cannot foresee
                         </p>
                         <p>Dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,
-                            so blinded by desire, that.</p>
+                            so blinded by desire, that.
+                        </p>
                         <button>Explore places</button>
                     </div>
                 </div>
                 <div class="grid_cell-1-2">
-                    <div class="why_choose_img">
-                        <img src="img/why_choose_us_pic1.jpg" alt="top image">
-                        <img src="img/why_choose_us_pic2.jpg" alt="bottom image">
+                    <div class="why_choose_us_images">
+                        <div class="top_image">
+                            <img src="img/why_choose_us_pic1.jpg" alt="top image">
+                        </div>
+                        <div class="bottom_image">
+                            <img src="img/why_choose_us_pic2.jpg" alt="bottom image">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--================= How it works =======================-->
+    <!-- ================= How it works ======================= -->
     <section class="how_it_works">
         <div class="content">
             <div class="grid_row">
+                <div class="arc_wrapper">
+                    <img src="img/arc.png" alt="arc">
+                </div>
+            </div>
+            <div class="grid_row">
                 <div class="grid_cell-1-3">
-                    <div class="align_center">
+                    <div class="step">
                         <div class="icon">
-                            <img src="img/icon_search.png">
+                            <img src="img/icon_search.png" alt="search icon">
                         </div>
                         <h3>Search places</h3>
                     </div>
                 </div>
                 <div class="grid_cell-1-3">
-                    <div class="align_center">
+                    <div class="step">
                         <div class="icon">
-                            <img src="img/icon_select.png">
+                            <img src="img/icon_select.png" alt="select icon">
                         </div>
                         <h3>Select places</h3>
                     </div>
                 </div>
                 <div class="grid_cell-1-3">
-                    <div class="align_center">
+                    <div class="step">
                         <div class="icon">
-                            <img src="img/icon_enjoy.png">
+                            <img src="img/icon_enjoy.png" alt="enjoy icon">
                         </div>
                         <h3>Book & enjoy</h3>
                     </div>
@@ -101,61 +110,87 @@
             </div>
         </div>
     </section>
-    <!--================= Example 1 =======================-->
-    <section class="example1">
-        <div class="grid_container content">
-            <!--<div class="grid_row">
-                <div class="grid_cell-1-2">-->
-                    <div class="place_description float_left clearfix">
-                        <h3 class="country">Spain</h3>
-                        <p class="place">Grand Spain Madrid</p>
-                        <p class="description">But I must explain to you how all this mistaken idea of account to
-                            denouncing pleasure and praising pain was account  born and I account will give you a
-                            complete account of the system</p>
-                        <button>Book now</button>
-                    </div>
-                <!--</div>
-            </div>-->
-        </div>
-    </section>
-    <!--================= Example 2 =======================-->
-    <section class="example2">
-        <div class="grid_container content">
-            <!--<div class="grid_row">
-                <div class="grid_cell-1-2">-->
-                    <div class="place_description float_right clearfix">
-                        <h3 class="country">Spain</h3>
-                        <p class="place">Grand Spain Madrid</p>
-                        <p class="description">But I must explain to you how all this mistaken idea of account to
-                            denouncing pleasure and praising pain was account  born and I account will give you a
-                            complete account of the system</p>
-                        <button>Book now</button>
-                    </div>
-                <!--</div>
-            </div>-->
-        </div>
-    </section>
-    <!--================= Testimonials =======================-->
-    <section class="testimonials">
-        <div class="content">
-            <h3>What our tourists say</h3> <!--text-transform: capitalize;-->
-            <div>
-                <div></div> <!--photo-->
-                <div></div> <!--quotation-->
+    <!-- ================= Example 1 ======================= -->
+    <section class="country_example1">
+        <div class="content clearfix">
+            <div class="place_description float_left">
+                <h3 class="country">Spain</h3>
+                <p class="place">Grand Spain Madrid</p>
+                <p class="description">But I must explain to you how all this mistaken idea of account to denouncing
+                    pleasure and praising pain was account  born and I account will give you a complete account of the system
+                </p>
+                <button>Book now</button>
             </div>
         </div>
     </section>
-    <!--================= Footer =======================-->
+    <!-- ================= Example 2 ======================= -->
+    <section class="country_example2">
+        <div class="content clearfix">
+            <div class="place_description float_right">
+                <h3 class="country">Spain</h3>
+                <p class="place">Grand Spain Madrid</p>
+                <p class="description">But I must explain to you how all this mistaken idea of account to denouncing
+                    pleasure and praising pain was account  born and I account will give you a complete account of the system
+                </p>
+                <button>Book now</button>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Testimonials ======================= -->
+    <section class="testimonials">
+        <div class="content">
+            <h3>What our tourists say</h3>
+            <div class="testimonial_area">
+                <div class="testimonial_image">
+                    <img src="img/testimonials_pic1.jpg" alt="testimonials pic">
+                </div>
+                <div class="testimonial_text">
+                    <p class="user_name">Sam Sumon</p>
+                    <blockquote>
+                        <i class="fas fa-quote-left"></i>
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and
+                        praising pain  But I must explain to you how all this mistaken idea of account to nai
+                        denouncing pleasure and praising pain was account  born and I account will give you a complete
+                        account of the system was account  born and I account will give you a nai the complete account
+                        of the system
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= Footer ======================= -->
     <footer>
         <div class="content">
             <p class="logo">Bhromaon</p>
-            <p>Safe travel anywhere</p>
+            <p class="slogan">Safe travel anywhere</p>
             <div class="social_icons">
-                <a href="#">facebook <i class="facebook-f"></i></a> <!-- f39e -->
-                <a href="#">twitter <i class="twitter"></i></a> <!-- f099 -->
-                <a href="#">linkedin <i class="linkedin-in"></i></a> <!-- f0e1 -->
-                <a href="#">youtube <i class="youtube"></i></a> <!-- f167 -->
-                <a href="#">pinterest <i class="pinterest"></i></a> <!-- f0d2 -->
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>

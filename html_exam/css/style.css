@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "Aleo";
+    font-family: 'Aleo';
     src: url("../fonts/Aleo-Regular.otf") format('otf');
+    font-weight: 300;
 }
 
 *{
@@ -9,14 +10,8 @@
     padding: 0;
 }
 
-html, body{
-    /*min-height: 100%;*/
-    height: 100%;
-    background-color: #fff;
-}
-
 body{
-    /*margin: 15px;*/
+    border: 15px solid #fff;
     color: #fff;
 }
 
@@ -25,6 +20,13 @@ a{
     text-decoration:none;
     color: #fff;
 }
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+/*one style for all buttons (except the button in Search form)*/
 button{
     text-decoration: none;
     border: none;
@@ -32,7 +34,7 @@ button{
     height: 60px;
     margin: 50px 0;
     text-transform: uppercase;
-    font-family: "Aleo", Arial, sans-serif;
+    font-family: Aleo, sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #fff;
@@ -45,89 +47,94 @@ button{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-h3{
-    font-family: "Aleo", Arial, sans-serif;
-    text-transform: capitalize;
-}
-
+/*block for content*/
 .content{
     width: 90%;
     max-width: 1110px;
     height: 100%;
     margin: 0 auto;
 }
+
 .clearfix:after {
     content:'';
-    display:table;
+    display:block;
     clear:both;
 }
 
 /*================= Start page =======================*/
 
 .start_page{
-    height: 100vh;
-    min-height: 800px;
+    padding: 230px 0 100px;
     background-image: url("../img/bg_start.jpg");
-    text-align: center;
+    background-size: cover;
     font-family: "Josefin Sans", Arial, sans-serif;
     font-weight: 300;
+    text-align: center;
     color: #fff;
 }
 
-.main{
-    height: 90%;
-    padding-top: 15%;
-}
-
-.start_page h1{
+.start_page .logo{
+    font-family: "Josefin Sans", Arial, sans-serif;
     text-transform: uppercase;
+    font-size: 48px;
     font-weight: 700;
-    /*font-size: 48px;*/
+    letter-spacing: 0.1em;
 }
 
-.start_page h3{
+.start_page .slogan{
+    font-family: "Josefin Sans", Arial, sans-serif;
     text-transform: capitalize;
     font-weight: 300;
-    /*font-size: 22px;*/
+    font-size: 22px;
+    letter-spacing: 7px;
 }
 
-.start_page .search_bar{
-    width: 646px;
+/*styles for Search form*/
+.start_page .search_form{
+    max-width: 650px;
     height: 60px;
-    margin: 30px auto;
+    margin: 50px auto;
     border: 2px solid #fff;
     font-size: 0;
 }
-.start_page .search_bar input{
+
+/*Search bar in the Search form*/
+.start_page .search_form input{
     display: inline-block;
+    width: 80%;
     vertical-align: top;
-    width:80%;
     border: none;
     text-transform: capitalize;
-    line-height: 56px;
-    font-size: 14px;
     text-align: center;
+    font-size: 14px;
+    line-height: 56px;
     color: #999999;
  }
 
-.start_page .search_bar button{
-    margin: 0;
+/*button in the Search form*/
+.start_page .search_form button{
     display: inline-block;
-    width:20%;
-    max-width:146px;
-    font-size: 14px;
-    background: #5474fd;
+    margin: 0;
+    width: 20%;
     height: 56px;
-
+    font-size: 14px;
+    line-height: 60px;
+    background: #5474fd;
 }
 
-    /*scroll button*/
+    /*style for section with scroll button and text*/
+.scroll{
+    text-transform: capitalize;
+    padding: 70px;
+    letter-spacing: 0.1em;
+}
+/*scroll button (arrow-shaped) */
 .arrow_down {
+    display: inline-block;
     margin-top: 10px;
+    padding: 5px;
     border: solid white;
     border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
     transform: rotate(45deg);
 }
 
@@ -136,78 +143,96 @@ h3{
     height: 80px;
     text-transform: uppercase;
     vertical-align: middle;
-    font-family: "Aleo", Arial, sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+    line-height: 80px;
     background-color: #5474fd;
     color: #fff;
-    line-height: 80px;
 }
+/*Styles for Logo in the bottom menu*/
 .bottom_menu .logo{
     display:inline-block;
     float: left;
-    text-transform: uppercase;
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-weight: 700;
     font-size: 24px;
+    letter-spacing: 0.1em;
 }
 
+/*by default all links in the bottom menu are placed on the right side*/
 .bottom_menu ul{
     float:right;
 }
 
+/*links in bottom menu*/
 .bottom_menu ul li{
+    font-family: Aleo, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     display:inline-block;
-    margin-right:35px;
+    margin-right: 35px;
 }
-
 .bottom_menu ul li:last-child{
-    margin-right:0
+    margin-right: 0;
 }
 
 /*================= Why choose us =======================*/
 .why_choose_us{
-    height: 100vh;
-    min-height: 680px;
-    background: url("../img/bg_why_choose_us.jpg") no-repeat;
+    padding: 120px 0 100px;
+    background: url("../img/bg_why_choose_us.jpg");
+    background-size: cover;
     color: #fff;
 }
 
-.why_choose{
-    padding-top: 120px;
-    padding-bottom: 120px;
+.why_choose_us_text{
+    height: 100%;
 }
 
-.why_choose h2{
-    font-family: "Aleo", Arial, sans-serif;
+.why_choose_us_text h2{
+    margin: 60px 0;
+    font-family: Aleo, sans-serif;
     font-weight: 300;
+    font-size: 36px;
 }
 
-.why_choose p{
+.why_choose_us_text p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 26px;
     color: #e8e8e8;
     font-family: "Josefin Sans", Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
 }
 
-.why_choose_img{
-    padding-top: 120px;
-    padding-bottom: 120px;
+.why_choose_us_images{
+    height: 100%;
 }
 
-.why_choose_img img{
-/*    max-width: 350px;
-    max-height: 220px;*/
+/*styles for top image*/
+.why_choose_us_images .top_image{
+    padding-left: 65px;
+    float: left;
+}
+
+/*styles for bottom image*/
+.why_choose_us_images .bottom_image{
+    float: right;
 }
 
 /*================= How it works =======================*/
 .how_it_works{
-    height: 50vh;
-    min-height: 340px;
-    padding-top: 10%;
+    padding: 40px 0 110px;
     background-color: #333333;
     text-transform: capitalize;
-    /*text-align: center;*/
+}
+
+.how_it_works .step{
+    width: 100%;
+    text-align: center;
+}
+.how_it_works h3{
+    font-family: Aleo, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #e8e8e8;
 }
 
 .how_it_works .icon{
@@ -218,27 +243,35 @@ h3{
     background-color: #333333;
 }
 
-
-.align_center{
-    display: inline-block;
-    text-align: center;
+/*styles for image with arcs*/
+.arc_wrapper{
+    margin: 0 auto;
+    width: 66%;
+}
+.arc_wrapper img{
+    max-width: 100%;
+    vertical-align: center;
+    opacity: 0.5;
 }
 
 
-/*================= Example 1 =======================*/
-.example1{
-    min-height: 700px;
-    height: 100vh;
-    background: url("../img/bg_example1.jpg") no-repeat;
-    /*text-align: center;*/
+/*================= Examples of countries & places =======================*/
+.country_example1{
+    padding: 230px 0 100px;
+    background: url("../img/bg_example1.jpg");
+    background-size: cover;
 }
 
+.country_example2{
+    padding: 230px 0 100px;
+    background: url("../img/bg_example2.jpg");
+    background-size: cover;
+}
+
+/*section with text*/
 .place_description{
     padding: 30px;
-    margin-top: 20%;
-    margin-bottom: 100px;
-    width: 50%; /*(540x370)*/
-    /*max-width: 370px;*/
+    width: 45%;
     background-color:rgba(35,35,35,0.9);
     font-family: "Josefin Sans", Arial, sans-serif;
     font-weight: 300;
@@ -252,6 +285,7 @@ h3{
     float: right;
 }
 
+/*name of country*/
 .place_description .country{
     padding: 15px 0;
     font-size: 20px;
@@ -259,6 +293,7 @@ h3{
     color: #e8e8e8;
 }
 
+/*place in the country*/
 .place_description .place{
     padding: 15px 0;
     text-transform: uppercase;
@@ -266,64 +301,118 @@ h3{
     color: #fff;
 }
 
+/*description of the place in the country*/
 .place_description .description{
     padding: 15px 0;
     font-size: 16px;
+    line-height: 26px;
     color: #e8e8e8;
 }
 
-    /*================= Example 2 =======================*/
-.example2{
-    min-height: 700px;
-    height: 100vh;
-    background: url("../img/bg_example2.jpg") no-repeat;
-    /*text-align: center;*/
-}
 
 /*================= Testimonials =======================*/
 .testimonials{
-    height: 100vh;
-    min-height: 730px;
-    background: url("../img/bg_testimonials.jpg") no-repeat;
-    /*text-align: center;*/
+    padding: 120px 0 200px;
+    background: url("../img/bg_testimonials.jpg");
+    background-size: cover;
+}
+
+.testimonials h3{
+    padding-bottom: 100px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-family: Aleo, sans-serif;
+    font-weight: 300;
+}
+
+.testimonial_area{
+    display: table;
+    font-size: 0;
+    max-height: 33%;
+    background-color: #333333;
+}
+
+/*styles for image & image container*/
+.testimonial_image{
+    display: table-cell;
+    vertical-align: middle;
+    width: 35%;
+}
+
+/*styles for section with text*/
+.testimonial_text{
+    width: 65%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 60px 50px;
+
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.testimonial_text .user_name{
+    /*padding-bottom: 35px;*/
+    text-transform: uppercase;
+    color: #fefefe;
+    font-size: 20px;
+}
+
+.testimonial_text blockquote{
+    color: #e8e8e8;
+    font-size: 16px;
+}
+
+/*style for quotation mark*/
+.testimonial_text blockquote i{
+    font-size: 36px;
+    color: #5474fd;
 }
 
 /*================= Footer =======================*/
-
 footer{
-    height: 50vh;
-    min-height: 270px;
+    padding: 110px 0;
     background-color: #232323;
     text-align: center;
 }
 
 footer .logo{
-    padding-top: 10%;
-    text-transform: uppercase;
     font-family: "Josefin Sans", Arial, sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: 0.15em;
 }
 
-footer p{
-    text-transform: capitalize;
-    line-height: 32px;
+footer .slogan{
     font-family: "Josefin Sans", Arial, sans-serif;
+    text-transform: capitalize;
     font-weight: 300;
+    line-height: 32px;
     font-size: 16px;
+    letter-spacing: 0.1em;
 }
 
+/*social media icons*/
 .social_icons a{
-    margin-bottom: 50px;
-    line-height: 48px;
+    line-height: 36px;
     color: #e8e8e8;
     font-size: 16px;
 }
 
-footer a:hover{
+.social_icons a:hover{
     color: #5474fd;
 }
 
+.social_icons ul li{
+    display:inline-block;
+    margin-right: 20px;
+}
+
+.social_icons ul li:last-child {
+    margin-right: 0
+}
 
 /*============================================================*/
 /*grids*/
